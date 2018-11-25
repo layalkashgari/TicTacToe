@@ -1,2 +1,7 @@
 # project1
-tictactoe
+
+# How to play 
+
+# Wireframe 
+
+# Future improvments 
