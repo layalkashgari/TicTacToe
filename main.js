@@ -1,15 +1,7 @@
-
 $(document).ready(function () {
     console.log('jQ ready!');
-
-    //issue: when i refresh the page the names dont go. 
-    // the second one goes 
-
-
-    // add an event to button
+    
     // player input is saved in a var called player input 
-    // set player function is called (why before?? )
-
   $('.player-submit').on('click', function(){
     var playerInput = $('.player-input').val();
     var playerInput2 = $('.player-input2').val();
@@ -18,9 +10,6 @@ $(document).ready(function () {
   })
 
   // function that sets localStorage value
-  // what is current player? 
-  // why are we calling the function before 
-
   function setPlayer(name) {
     window.localStorage.setItem('currentPlayer', name);
     renderPlayer();
@@ -31,7 +20,7 @@ $(document).ready(function () {
     renderPlayer();
   }
 
-  // function that renders to the DOM
+  // function that renders to the DOM > check the meaning 
   function renderPlayer() {
     var player1 = window.localStorage.getItem('currentPlayer');
     var player2 = window.localStorage.getItem('currentPlayer2');
@@ -74,12 +63,13 @@ $(document).ready(function () {
     var spot7 = $('#seven');
     var spot8 = $('#eight');
     var spot9 = $('#nine');
-    var i = 0; // index that incriments each play(turn) 
+    var i = 0; // index that incriments each play(turn) for the draw 
 
     var player1 = 'X'
     var player2 = 'O'
-    var currentPlayer = 0; // might need to understand this better
-    // var play = true; 
+    var currentPlayer = 0; // to switch between X and O 
+
+   
 
 
 
@@ -101,11 +91,11 @@ $(document).ready(function () {
 
     $('.button').one('click', function () {
         console.log('click');
-        // if its empty show syblol if its not empty user cant click on the box 
 
-        // if ($(this).text() === "") { 
         console.log($(this).attr('id'))
         // first player is X second player is O 
+        // this refers to the square clicked by the user 
+        // 'id' > ? 
 
         if (currentPlayer === 0) {
             console.log("player x")
@@ -121,15 +111,15 @@ $(document).ready(function () {
             $(this).text(player2);
             currentPlayer = 0
         }
-        // calling checkwinner function after each click on the button 
+
+        // calling checkwinner function after each click on the button to check if thre is a win 
 
         checkWinner();
-        // checkLoss(); 
     })
 
 
     function checkWinner() {
-        i = i + 1; //increamnet - need to understand this more
+        i = i + 1; //increamnet - counts player moves 
         console.log(i);
         // when moves are over 9 alert no one won 
         if (i >= 9) {
@@ -149,7 +139,8 @@ $(document).ready(function () {
             // https://sweetalert2.github.io/images/nyan-cat.gif
             })
         }
-        // margin-top: 30px; height: auto; max-width: 80%; max-height: 80%;
+    
+
 
         console.log($(spot1).text());
 
