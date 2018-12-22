@@ -14,7 +14,7 @@ Built using HTML, CSS, jQuery.
 
 # Struggles 
 
-Programming Logic. 
+- 
 
 # Future improvements 
 
@@ -26,9 +26,9 @@ Include sound-effects.
 Improve the structre and style of the game. 
 User can undo a move. 
 
-# special thanks 
+# Special thanks 
 
-Trevor, Jacki and Ghadeer. Everyone. :D:D 
+Trevor, Jacki and Ghadeer.
 
 # Resources: 
 
