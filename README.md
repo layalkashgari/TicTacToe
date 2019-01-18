@@ -12,7 +12,9 @@ User Story: Reset the board (game) by clicking on the reset button.
 
 Built using HTML, CSS, jQuery.
 
-# Struggles 
+# Game Link
+
+https://layalkashgari.github.io/TicTacToe/landing.html 
 
 - 
 
